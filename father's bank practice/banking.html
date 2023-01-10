@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Banking</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center py-5">--Banking site--</h1>
+    </header>
+    <main>
+        <section>
+            <div class=" flex justify-center mt-8">
+                <div class="grid grid-cols-3 gap-3 w-3/4">
+                    <div class="bg-orange-300 p-5 rounded text-white">
+                        <h3 class="text-2xl">Deposit</h3>
+                        <p class="text-4xl">$<span id="deposit-field">000</span></p>
+                    </div>
+                    <div class="bg-yellow-300 p-5 rounded text-white">
+                        <h3 class="text-2xl">Withdraw</h3>
+                        <p class="text-4xl">$<span id="withdraw-field">000</span></p>
+                    </div>
+                    <div class="bg-green-300 p-5 rounded text-white">
+                        <h3 class="text-2xl">Total balance</h3>
+                        <p class="text-4xl">$<span id="total-field">1500</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class=" flex justify-center mt-8">
+                <div class="grid grid-cols-2 gap-3 w-3/4">
+                    <div class="bg-slate-400 p-5 rounded text-white">
+                        <h3 class="text-2xl py-1">Deposit</h3>
+                        <input type="number" name="" id="deposit-input" class="w-3/4 py-1 px-1 text-black rounded">
+                        <button type="submit" id="deposit-button" class="bg-yellow-400 px-6 py-2 text-white rounded font-bold block my-2">Deposit</button>
+                    </div>
+                    <div class="bg-red-300 p-5 rounded text-white">
+                        <h3 class="text-2xl py-1">Withdraw</h3>
+                        <input type="number" name="" id="withdraw-input" class="w-3/4 py-1 px-1 text-black rounded">
+                        <button type="submit" id="withdraw-button" class="bg-yellow-400 px-6 py-2 text-white rounded font-bold block my-2">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+
+    <script src="js/banking.js"></script>
+</body>
+</html>
